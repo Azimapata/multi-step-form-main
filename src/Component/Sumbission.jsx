@@ -1,8 +1,12 @@
-import bgsidebardesktop from "../images/bg-sidebar-desktop.svg";
 
-const Formstep3 = () => {
+import bgsidebardesktop from "../images/bg-sidebar-desktop.svg";
+import thankyou from '../images/icon-thank-you.svg'
+
+const Sumbission = () => {
   return (
+ 
     <div>
+          <div>
 
 <div>
       <div className="flex mt-40 bg-[#fafbff] ml-96 mr-[500px] rounded-lg shadow-2xl">
@@ -65,47 +69,16 @@ const Formstep3 = () => {
 
       
 
-        <div className="ml-20">
-          <h1 className=" mt-16 text-[30px] font-[Ubuntu-Bold]">
-          Pick add-ons
-          </h1>
-          <p className="font-[Ubuntu-Regular] text-[16px] opacity-50">
-          Add-ons help enhance your gaming experience.
-          </p>
-
-     <div>
-   
-      <div className=" flex items-center mt-11  hover:border-blue-800  duration-1000 border-[1px] p-3 rounded-lg">
-      <input type="checkbox" className="form-checkbox text-indigo-600 ml-7 mr-4 "/>
-      <p className="ml-2 font-[Ubuntu-Bold] "> Online service <br /> <span className="text-[14px] font-[Ubuntu-Medium] opacity-50"> Access to multiplayer game</span></p>
-      <p className="ml-36 font-[Ubuntu-Regular] text-[14px] text-purple-900">+$1/mo</p>
+        <div className="mx-auto">
+         
+    <div  className="mt-44 mx-auto ">
+    <img src={thankyou} className="ml-36" alt="" />
+            <h1 className="mt-6 font-[Ubuntu-Bold] ml-28 mb-5  text-[30px]">Thank you!</h1>
+            <p className="font-[Ubuntu-Regular] opacity-50" >Thanks for confirming your subscription! We hope you have <br />
+            fun using our platform. If you ever need support, please feel <br />
+           <span className="ml-7"> free to email us at support@loremgaming.com. </span></p>
     </div>
-      <div className=" flex items-center  hover:border-blue-800  duration-1000  border-[1px] p-3 rounded-lg mt-4 ">
-      <input type="checkbox" className="form-checkbox text-indigo-600 ml-7 mr-4 "/>
-      <p className="ml-2 font-[Ubuntu-Bold] ">  Larger storage<br /> <span className="text-[14px] font-[Ubuntu-Medium] opacity-50"> Extra 1TB of cloud save</span></p>
-      <p className="ml-44 font-[Ubuntu-Regular] text-[14px]">+$2/mo</p>
-    </div>
-      <div className=" flex items-center  hover:border-blue-800  duration-1000  border-[1px] p-3 rounded-lg mt-4 ">
-      <input type="checkbox" className="form-checkbox text-indigo-600 ml-7 mr-4 "/>
-      <p className="ml-2 font-[Ubuntu-Bold] ">   Customizable Profile <br /> <span className="text-[14px] font-[Ubuntu-Medium] opacity-50"> Custom theme on your profile</span></p>
-      <p className="ml-32 font-[Ubuntu-Regular] text-[14px]">+$2/mo</p>
-    </div>
-
-
       
-     </div>
-
-        
-              <div className="flex justify-end">
-              <button className='mt-24 font-[Ubuntu-Regular] text-[16px] mr-64 opacity-50 '>Go back</button>
-                <div className="flex justify-end mt-24 ">
-                <button className="bg-[#090646de] p-3 text-white rounded-xl pl-9 pr-9" >
-                  {" "}
-                  Next step
-                </button>
-                </div>
-               
-              </div>
 
 
 
@@ -115,7 +88,8 @@ const Formstep3 = () => {
 
 
     </div>
+    </div>
   )
 }
 
-export default Formstep3
+export default Sumbission

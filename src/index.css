@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    background-color: #f0f6ff;
+}
+
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url('/src/fonts/Ubuntu-Bold.ttf');
+}
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url('/src/fonts/Ubuntu-Medium.ttf');
+}
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url('/src/fonts/Ubuntu-Regular.ttf');
+}
