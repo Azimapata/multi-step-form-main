@@ -60,7 +60,7 @@ const Formstep1 = ({ onNext }) => {
   return (
     <div>
       <div>
-        <div className="flex mt-40 bg-[#fafbff] ml-96 mr-[400px] rounded-lg shadow-2xl">
+        <div className="flex mt-40 bg-[#fafbff] ml-72 mr-[400px] rounded-lg shadow-2xl">
           <div>
             <Sidebar />
           </div>

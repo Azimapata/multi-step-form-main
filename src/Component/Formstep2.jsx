@@ -7,10 +7,20 @@ import { useState } from "react";
 
 const Formstep2 = ({ onNext, onBack }) => {
   const [isYearly, setIsYearly] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState("");
 
   const handleToggle = () => {
     setIsYearly(!isYearly);
   };
+
+  const handlePlanSelect = (plan) => {
+    setSelectedPlan(plan);
+  };
+
+  const getPlanClass = (plan) =>
+    `border-[1px] pt-6 pb-9 pl-5 pr-12 rounded-lg ${
+      selectedPlan === plan ? "border-blue-800" : "border-gray-300"
+    } hover:border-blue-800 duration-1000`;
 
   return (
     <div>
@@ -27,8 +37,11 @@ const Formstep2 = ({ onNext, onBack }) => {
               You have the option of monthly or yearly billing.
             </p>
             <div className="flex mt-11">
-              <div className="border-[1px] hover:border-blue-800 duration-1000 pt-6 pb-9 pl-5 pr-12 rounded-lg">
-                <img src={arcade} alt="" />
+              <div
+                className={getPlanClass("arcade")}
+                onClick={() => handlePlanSelect("arcade")}
+              >
+                <img src={arcade} alt="Arcade" />
                 <p className="pt-9 text-[16px] font-[Ubuntu-Bold] leading-tight">
                   Arcade <br />
                   <span className="text-[11px] font-[Ubuntu-Medium]">
@@ -36,8 +49,11 @@ const Formstep2 = ({ onNext, onBack }) => {
                   </span>
                 </p>
               </div>
-              <div className="ml-5 border-[1px] hover:border-blue-800 pt-6 pb-5 pl-5 pr-9 rounded-lg">
-                <img src={advance} alt="" />
+              <div
+                className={`${getPlanClass("advanced")} ml-5`}
+                onClick={() => handlePlanSelect("advanced")}
+              >
+                <img src={advance} alt="Advanced" />
                 <p className="pt-9 text-[16px] font-[Ubuntu-Bold] leading-tight">
                   Advanced <br />
                   <span className="text-[11px] font-[Ubuntu-Medium]">
@@ -45,8 +61,11 @@ const Formstep2 = ({ onNext, onBack }) => {
                   </span>
                 </p>
               </div>
-              <div className="ml-5 border-[1px] hover:border-blue-800 pt-6 pb-5 pl-8 pr-12 rounded-lg">
-                <img src={pro} alt="" />
+              <div
+                className={`${getPlanClass("pro")} ml-5`}
+                onClick={() => handlePlanSelect("pro")}
+              >
+                <img src={pro} alt="Pro" />
                 <p className="pt-9 text-[16px] font-[Ubuntu-Bold] leading-tight">
                   Pro <br />
                   <span className="text-[11px] font-[Ubuntu-Medium]">
@@ -58,17 +77,15 @@ const Formstep2 = ({ onNext, onBack }) => {
             <div className="flex items-center mt-12 justify-items-center bg-[#f0f6ff] p-3">
               <p className="pr-3 ml-28 font-[Ubuntu-Regular]">Monthly</p>
               <label className="relative inline-block w-8 h-4">
-                <input 
-                  type="checkbox" 
-                  className="w-0 h-0 opacity-0 peer" 
-                  onChange={handleToggle} 
+                <input
+                  type="checkbox"
+                  className="w-0 h-0 opacity-0 peer"
+                  onChange={handleToggle}
                 />
                 <span className="absolute inset-0 transition duration-300 bg-gray-300 rounded-full cursor-pointer peer-checked:bg-[#090646de]"></span>
                 <span className="absolute left-0.5 top-0.5 h-3 w-3 bg-white rounded-full transition-transform duration-300 transform peer-checked:translate-x-4"></span>
               </label>
-              <p className="pl-3 text-[#090646de] font-[Ubuntu-Medium]">
-                Yearly
-              </p>
+              <p className="pl-3 text-[#090646de font-[Ubuntu-Medium]">Yearly</p>
             </div>
             <div className="flex">
               <button

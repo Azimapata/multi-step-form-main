@@ -10,6 +10,7 @@ const Sidebar = () => {
             style={{
               backgroundImage: `url(${bgsidebardesktop})`,
               backgroundRepeat: `no-repeat`,
+              
             }}
             className="ml-[20px] h-[600px] w-[300px] bg-cover mt-5 mb-5 rounded-2xl"
           >
