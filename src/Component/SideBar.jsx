@@ -1,4 +1,4 @@
-import bgsidebardesktop from "../images/bg-sidebar-desktop.svg";
+
 
 const Sidebar = () => {
 
@@ -7,12 +7,7 @@ const Sidebar = () => {
   return (
     <div>
          <div
-            style={{
-              backgroundImage: `url(${bgsidebardesktop})`,
-              backgroundRepeat: `no-repeat`,
-              
-            }}
-            className="ml-[20px] h-[600px] w-[300px] bg-cover mt-5 mb-5 rounded-2xl"
+            className="ml-[20px] h-[600px] w-[300px] bg-cover mt-5 mb-5 rounded-2xl background"
           >
             <div className="flex">
               <h1 className=" inline-block w-[40px] h-[40px] rounded-[50%] bg-[#adbeff]  pl-[15px] pt-[7px] font-[Ubuntu-Medium] ml-9 mt-9 ">

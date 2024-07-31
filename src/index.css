@@ -18,3 +18,8 @@ body{
     font-family: Ubuntu-Regular;
     src: url('/src/fonts/Ubuntu-Regular.ttf');
 }
+
+.background{
+    background-image: url('./images/bg-sidebar-desktop.svg');
+    background-repeat: no-repeat;
+}
