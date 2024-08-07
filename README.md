@@ -3,6 +3,24 @@
 
 Welcome to my project! 🚀
 
+## INTRO
+
+Welcome to the Multi-Step Form project! This application is designed to streamline the process of filling out forms by breaking them down into manageable steps. By guiding users through a series of steps, it enhances user experience, reduces errors, and ensures that all necessary information is captured efficiently.
+
+Whether you're building a registration form, a survey, or an application process, this multi-step form provides a user-friendly way to gather data. Each step focuses on a specific section of the form, making it less overwhelming and more intuitive for users.
+
+## Tech Stack
+
+This project is built using the following technologies:
+
+- **React**: A JavaScript library for building user interfaces, which helps in creating reusable UI components.
+- **JavaScript (ES6+)**: The core programming language used to build the functionality of the form.
+- **CSS (Tailwind CSS)**: A utility-first CSS framework for styling the application, providing a highly customizable design system.
+- **HTML5**: The standard markup language for creating web pages, used for structuring the form.
+- **PropTypes**: A library for type-checking React props, ensuring that components receive the correct types of props.
+
+
+
  ## FEATURES 👨‍🍳
 
 ## USER-FRIENDLY NAVIGATION:
@@ -108,6 +126,9 @@ The idea for the Multi-Step Form came from front-end mentor website and i just w
 
 3. **Styling**:
     - Hard a hard time in the  responsive design that i left it but i will try to do it later.
+
+4. **Github** : 
+   - Learnt how to push and pull on github form this project  
    
 
 
