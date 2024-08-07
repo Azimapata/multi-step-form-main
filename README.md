@@ -12,7 +12,7 @@ Next and Previous Buttons: Allow users to easily move forward or backward throug
 Sidebar Navigation: Provides an overview and quick navigation to different steps.
 
 
-## Data VALIDATION AND FEEDBACK:
+## DATA VALIDATION AND FEEDBACK:
 
 Real-Time Validation: Ensures that the entered data meets the required criteria before users can proceed to the next step.
 Error Messages: Clearly highlight errors and guide users to correct them.
