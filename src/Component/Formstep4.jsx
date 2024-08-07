@@ -5,11 +5,11 @@ const Formstep4 = ({ onNext, onBack }) => {
   return (
     <div>
       <div>
-        <div className="flex mt-40 bg-[#fafbff] ml-96 mr-[400px] rounded-lg shadow-2xl">
+        <div className="flex  bg-[#fafbff]  rounded-lg shadow-2xl">
           <div>
             <Sidebar  />
           </div>
-          <div className="ml-32">
+          <div className="ml-20 mr-32">
             <h1 className="mt-16 text-[30px] font-[Ubuntu-Bold]">Finishing up</h1>
             <p className="font-[Ubuntu-Regular] text-[16px] opacity-50">
               Double-check everything looks OK before confirming.
@@ -40,7 +40,7 @@ const Formstep4 = ({ onNext, onBack }) => {
               <button className="mt-24 font-[Ubuntu-Regular] text-[16px] mr-64 opacity-50" onClick={onBack}>
                 Go back
               </button>
-              <div className="flex justify-end mt-24">
+              <div className="flex justify-end mt-24 ">
                 <button className="bg-[#090646de] p-3 text-white rounded-xl pl-9 pr-9" onClick={onNext}>
                   Next step
                 </button>

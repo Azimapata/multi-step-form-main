@@ -25,11 +25,11 @@ const Formstep2 = ({ onNext, onBack }) => {
   return (
     <div>
       <div>
-        <div className="flex mt-40 bg-[#fafbff] ml-96 mr-[400px] rounded-lg shadow-2xl">
+        <div className="flex  bg-[#fafbff] rounded-lg shadow-2xl">
           <div>
             <Sidebar />
           </div>
-          <div className="ml-28">
+          <div className="ml-24 mr-28">
             <h1 className="mt-16 text-[30px] font-[Ubuntu-Bold]">
               Select your plan
             </h1>
@@ -74,7 +74,7 @@ const Formstep2 = ({ onNext, onBack }) => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center mt-12 justify-items-center bg-[#f0f6ff] p-3">
+            <div className="flex items-center mt-12 justify-items-center bg-[#f0f6ff] p-3 w-[430px]">
               <p className="pr-3 ml-28 font-[Ubuntu-Regular]">Monthly</p>
               <label className="relative inline-block w-8 h-4">
                 <input
@@ -89,15 +89,16 @@ const Formstep2 = ({ onNext, onBack }) => {
             </div>
             <div className="flex">
               <button
-                className="mt-24 font-[Ubuntu-Regular] text-[16px] mr-60 opacity-50"
+                className="mt-24 font-[Ubuntu-Regular] text-[16px] mr-64 opacity-50"
                 onClick={onBack}
               >
                 Go back
               </button>
-              <div className="flex justify-end mt-24">
+              <div className="flex justify-end mt-24 ">
                 <button
                   className="bg-[#090646de] p-3 text-white rounded-xl pl-9 pr-9"
                   onClick={onNext}
+                  disabled={!selectedPlan}
                 >
                   Next step
                 </button>

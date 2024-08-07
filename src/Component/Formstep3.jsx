@@ -9,6 +9,8 @@ const Formstep3 = ({ onNext, onBack }) => {
     customizableProfile: false,
   });
 
+  
+
   const handleCheckboxChange = (e) => {
     const { name, checked } = e.target;
     setSelectedAddOns((prevAddOns) => ({
@@ -20,11 +22,11 @@ const Formstep3 = ({ onNext, onBack }) => {
   return (
     <div>
       <div>
-        <div className="flex mt-40 bg-[#fafbff] ml-96 mr-[400px] rounded-lg shadow-2xl">
+        <div className="flex  bg-[#fafbff]  rounded-lg shadow-2xl">
           <div>
             <Sidebar />
           </div>
-          <div className="ml-20">
+          <div className="ml-20 mr-16">
             <h1 className="mt-16 text-[30px] font-[Ubuntu-Bold]">Pick add-ons</h1>
             <p className="font-[Ubuntu-Regular] text-[16px] opacity-50">
               Add-ons help enhance your gaming experience.
@@ -73,17 +75,18 @@ const Formstep3 = ({ onNext, onBack }) => {
                 <p className="ml-32 font-[Ubuntu-Regular] text-[14px]">+$2/mo</p>
               </div>
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-end ml-11">
               <button
-                className="mt-24 font-[Ubuntu-Regular] text-[16px] mr-64 opacity-50"
+                className="mt-24 font-[Ubuntu-Regular] text-[16px] mr-64 opacity-50 "
                 onClick={onBack}
               >
                 Go back
               </button>
-              <div className="flex justify-end mt-24">
+              <div className="flex justify-end mt-24 mr-14">
                 <button
                   className="bg-[#090646de] p-3 text-white rounded-xl pl-9 pr-9"
                   onClick={onNext}
+                  
                 >
                   Next step
                 </button>

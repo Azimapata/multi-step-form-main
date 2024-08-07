@@ -60,19 +60,19 @@ const Formstep1 = ({ onNext }) => {
   return (
     <div>
       <div>
-        <div className="flex mt-40 bg-[#fafbff] ml-72 mr-[400px] rounded-lg shadow-2xl">
+        <div className="flex flex-col lg:flex-row  bg-[#fafbff] rounded-lg shadow-2xl">
           <div>
             <Sidebar />
           </div>
-          <div className="ml-28">
-            <h1 className="mt-12 text-[30px] font-[Ubuntu-Bold]">
+          <div className=" ml-40 absolute lg:relative inset-0 lg:ml-11 bg-[#fafbff] lg:bg-transparent rounded-lg lg:rounded-none shadow-2xl lg:shadow-none mt-80 lg:mt-0 p-12 container pr-16" >
+            <h1 className="mt-4 text-[30px] font-[Ubuntu-Bold]">
               Personal info
             </h1>
             <p className="font-[Ubuntu-Regular] text-[16px] opacity-50">
               Please provide your name, email address, and phone number.
             </p>
             <form onSubmit={handleNext}>
-              <div className="relative mb-6">
+              <div className="container relative mb-6">
                 <p className="mt-7 font-[Ubuntu-Regular]">Name</p>
                 <input
                   type="text"
@@ -83,12 +83,12 @@ const Formstep1 = ({ onNext }) => {
                   className={getInputClass(errors.name)}
                 />
                 {errors.name && (
-                  <p className="absolute top-[-20px] right-0 text-red-500 text-sm bg-white px-1 mt-8 font-[Ubuntu-Regular]">
+                  <p className="absolute top-[-20px] right-0 text-red-500 text-sm bg-white px-1 mt-8 font-[Ubuntu-Regular] ">
                     {errors.name}
                   </p>
                 )}
               </div>
-              <div className="relative mb-6">
+              <div className="container relative mb-6">
                 <p className="font-[Ubuntu-Regular]">Email Address</p>
                 <input
                   type="text"
@@ -99,7 +99,7 @@ const Formstep1 = ({ onNext }) => {
                   className={getInputClass(errors.email)}
                 />
                 {errors.email && (
-                  <p className="absolute top-[-20px] right-0 text-red-500 text-sm bg-white px-1 mt-8 font-[Ubuntu-Regular]">
+                  <p className="absolute top-[-20px] right-0 text-red-500 text-sm bg-white px-1 mt-8 font-[Ubuntu-Regular] ">
                     {errors.email}
                   </p>
                 )}
@@ -115,13 +115,13 @@ const Formstep1 = ({ onNext }) => {
                   className={getInputClass(errors.phone)}
                 />
                 {errors.phone && (
-                  <p className="absolute top-[-20px] right-0 text-red-500 text-sm bg-white px-1 mt-8 font-[Ubuntu-Medium]">
+                  <p className="absolute top-[-20px] right-0 text-red-500 text-sm bg-white px-1 mt-8 font-[Ubuntu-Medium] ">
                     {errors.phone}
                   </p>
                 )}
               </div>
 
-              <div className="flex justify-end mt-24">
+              <div className="flex justify-end mt-20 ">
                 <button
                   type="submit"
                   className="bg-[#090646de] p-3 text-white rounded-xl pl-9 pr-9"

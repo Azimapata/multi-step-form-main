@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types";
 
 import thankyou from '../images/icon-thank-you.svg'
 import Sidebar from './SideBar';
@@ -9,7 +9,7 @@ const Sumbission = () => {
           <div>
 
 <div>
-      <div className="flex mt-40 bg-[#fafbff] ml-96 mr-[400px] rounded-lg shadow-2xl">
+      <div className="flex  bg-[#fafbff]  rounded-lg shadow-2xl">
         
 
       <div>
@@ -18,7 +18,7 @@ const Sumbission = () => {
 
       
 
-        <div className="mx-auto">
+        <div className="mx-auto ml-20 mr-28">
          
     <div  className="mx-auto mt-44 ">
     <img src={thankyou} className="ml-36" alt="" />
@@ -40,5 +40,10 @@ const Sumbission = () => {
     </div>
   )
 }
+
+Sumbission.propTypes = {
+  onNext: PropTypes.func.isRequired,
+  onBack: PropTypes.func.isRequired,
+};
 
 export default Sumbission

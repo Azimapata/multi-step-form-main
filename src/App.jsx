@@ -19,6 +19,7 @@ function App() {
   const handleNextStep = () => {
     setStep(prevStep => prevStep + 1);
   };
+  
 
   const handlePreviousStep = () => {
     setStep(prevStep => prevStep - 1);
@@ -26,18 +27,20 @@ function App() {
 
   let stepContent;
   if (step === 1) {
-    stepContent = <FormStep1 onNext={handleNextStep} />;
+    stepContent = <FormStep1 onNext={handleNextStep}  />;
   } else if (step === 2) {
     stepContent = <FormStep2 onNext={handleNextStep} onBack={handlePreviousStep} />;
   } else if (step === 3) {
-    stepContent = <FormStep3 onNext={handleNextStep} onBack={handlePreviousStep} />;
+    stepContent = <FormStep3  onNext={handleNextStep} onBack={handlePreviousStep} />;
   } else if (step === 4) {
-    stepContent = <FormStep4 onBack={handlePreviousStep} />;
+    stepContent = <FormStep4  onNext={handleNextStep}  onBack={handlePreviousStep} />;
+  } else if (step === 5){
+    stepContent = <Submission  onNext={handleNextStep}/>
   }
-   else if (step === 5) {
-    stepContent = <Submission onBack={handlePreviousStep} />;
-  }
+  
+  
 
+  
 
 
   return (
@@ -49,8 +52,10 @@ function App() {
     {/* <Sumbission/> */}
     
       {/* <Sidebar /> */}
-      <div className="ml-28">
-        {stepContent}
+      <div className="min-h-screen w-full flex justify-center items-center">
+        <div className="">
+          {stepContent}
+        </div>
       </div>
  
     </>
