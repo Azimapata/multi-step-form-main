@@ -3,23 +3,17 @@ import { useState } from "react";
 import Sidebar from "./SideBar";
 
 const Formstep3 = ({ onNext, onBack }) => {
-  const [selectedAddOns, setSelectedAddOns] = useState({
-    onlineService: false,
-    largerStorage: false,
-    customizableProfile: false,
-  });
 
-  
+  const [selectedAddOns, setSelectedAddOns] = useState([]);
 
-  const handleCheckboxChange = (e) => {
-    const { name, checked } = e.target;
-    setSelectedAddOns((prevAddOns) => ({
-      ...prevAddOns,
-      [name]: checked,
-    }));
-  };
+  const addOns = [
+    { id: 1, product: 'Online Services', price: "+$1" },
+    { id: 2, product: 'Larger storage', price: "+$2" },
+    { id: 3, product: 'Customizable Profile', price: "+$2" },
+    
+  ];
 
-  return (
+   return (
     <div>
       <div>
         <div className="flex  bg-[#fafbff]  rounded-lg shadow-2xl">
@@ -36,8 +30,7 @@ const Formstep3 = ({ onNext, onBack }) => {
                 <input
                   type="checkbox"
                   name="onlineService"
-                  checked={selectedAddOns.onlineService}
-                  onChange={handleCheckboxChange}
+                 
                   className="mr-4 text-indigo-600 form-checkbox ml-7"
                 />
                 <p className="ml-2 font-[Ubuntu-Bold]">
@@ -50,8 +43,7 @@ const Formstep3 = ({ onNext, onBack }) => {
                 <input
                   type="checkbox"
                   name="largerStorage"
-                  checked={selectedAddOns.largerStorage}
-                  onChange={handleCheckboxChange}
+                
                   className="mr-4 text-indigo-600 form-checkbox ml-7"
                 />
                 <p className="ml-2 font-[Ubuntu-Bold]">
@@ -64,8 +56,7 @@ const Formstep3 = ({ onNext, onBack }) => {
                 <input
                   type="checkbox"
                   name="customizableProfile"
-                  checked={selectedAddOns.customizableProfile}
-                  onChange={handleCheckboxChange}
+                 
                   className="mr-4 text-indigo-600 form-checkbox ml-7"
                 />
                 <p className="ml-2 font-[Ubuntu-Bold]">

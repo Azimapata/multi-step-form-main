@@ -15,6 +15,7 @@ import './index.css'
 function App() {
   
   const [step, setStep] = useState(1);
+  const [selectedAddOns, setSelectedAddOns] = useState([]);
 
   const handleNextStep = () => {
     setStep(prevStep => prevStep + 1);
@@ -23,6 +24,10 @@ function App() {
 
   const handlePreviousStep = () => {
     setStep(prevStep => prevStep - 1);
+  };
+
+  const handleAddOnsChange = (addOns) => {
+    setSelectedAddOns(addOns);
   };
 
   let stepContent;
@@ -52,7 +57,7 @@ function App() {
     {/* <Sumbission/> */}
     
       {/* <Sidebar /> */}
-      <div className="min-h-screen w-full flex justify-center items-center">
+      <div className="flex items-center justify-center w-full min-h-screen">
         <div className="">
           {stepContent}
         </div>

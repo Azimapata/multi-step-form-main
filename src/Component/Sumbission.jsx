@@ -18,7 +18,7 @@ const Sumbission = () => {
 
       
 
-        <div className="mx-auto ml-20 mr-28">
+        <div className="mx-auto ml-20 mr-32">
          
     <div  className="mx-auto mt-44 ">
     <img src={thankyou} className="ml-36" alt="" />
