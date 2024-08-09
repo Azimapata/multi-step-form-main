@@ -154,8 +154,8 @@ After cloning the repository, follow these steps to run the project locally.
 ### Prerequisites
 
 Make sure you have the following installed on your machine:
-- Node.js 
-- npm 
+- Node.js (version 14.0.0 or higher)
+- npm  (version 6.0.0 or higher)
 
 ### Installation
 

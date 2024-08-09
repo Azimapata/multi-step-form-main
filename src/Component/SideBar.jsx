@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     <div>
          <div
-            className="  ml-[0px] lg:ml-[20px]  h-[180px] lg:h-[600px]  w-[390px] lg:w-[250px] bg-cover  -mt-40 lg:mt-5 mb-5 rounded-2xl background flex lg:block"
+            className="  ml-[0px] lg:ml-[20px]  h-[200px] lg:h-[600px]  w-[550px] lg:w-[250px] bg-cover  -mt-40 lg:mt-5 mb-5 rounded-2xl background flex lg:block"
           >
             <div className="flex">
               <h1 className=" inline-block w-[40px] h-[40px] rounded-[50%] bg-[#adbeff]  pl-[15px] pt-[7px] font-[Ubuntu-Medium]  ml-20 lg:ml-9 mt-10 lg:mt-9  ">

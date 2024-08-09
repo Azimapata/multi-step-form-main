@@ -1,17 +1,17 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+// import { useState } from "react";
 import Sidebar from "./SideBar";
 
 const Formstep3 = ({ onNext, onBack }) => {
 
-  const [selectedAddOns, setSelectedAddOns] = useState([]);
+  // const [selectedAddOns, setSelectedAddOns] = useState([]);
 
-  const addOns = [
-    { id: 1, product: 'Online Services', price: "+$1" },
-    { id: 2, product: 'Larger storage', price: "+$2" },
-    { id: 3, product: 'Customizable Profile', price: "+$2" },
+  // const addOns = [
+  //   { id: 1, product: 'Online Services', price: "+$1" },
+  //   { id: 2, product: 'Larger storage', price: "+$2" },
+  //   { id: 3, product: 'Customizable Profile', price: "+$2" },
     
-  ];
+  // ];
 
    return (
     <div>
@@ -39,12 +39,12 @@ const Formstep3 = ({ onNext, onBack }) => {
                 </p>
                 <p className="ml-36 font-[Ubuntu-Regular] text-[14px] text-purple-900">+$1/mo</p>
               </div>
-              <div className="flex items-center hover:border-blue-800 duration-1000 border-[1px] p-3 rounded-lg mt-4">
+              <div className="flex items-center hover:border-blue-800 duration-1000 border-[1px] p-3 rounded-lg mt-4 pr-6">
                 <input
                   type="checkbox"
                   name="largerStorage"
                 
-                  className="mr-4 text-indigo-600 form-checkbox ml-7"
+                  className="mr-2 text-indigo-600 form-checkbox ml-7"
                 />
                 <p className="ml-2 font-[Ubuntu-Bold]">
                   Larger storage<br />

@@ -53,7 +53,7 @@ const Formstep1 = ({ onNext }) => {
   };
 
   const getInputClass = (error) =>
-    `w-[500px] border-[1px] rounded-[5px] font-[Ubuntu-Medium] h-[50px] text-[17px] mt-2 pl-5 ${
+    ` w-[400px]  lg:w-[500px] border-[1px] rounded-[5px] font-[Ubuntu-Medium] h-[50px] text-[17px] mt-2 pl-5 ${
       error ? "border-red-500" : "border-gray-300"
     } bg-[#fafbff]`;
 
@@ -64,8 +64,8 @@ const Formstep1 = ({ onNext }) => {
           <div>
             <Sidebar />
           </div>
-          <div className=" ml-40 absolute lg:relative inset-0 lg:ml-11 bg-[#fafbff] lg:bg-transparent rounded-lg lg:rounded-none shadow-2xl lg:shadow-none mt-80 lg:mt-0 p-12 container pr-16" >
-            <h1 className="mt-4 text-[30px] font-[Ubuntu-Bold]">
+          <div className=" ml-10 absolute lg:relative inset-0 lg:ml-11 bg-[#fafbff] lg:bg-transparent rounded-lg lg:rounded-none shadow-2xl lg:shadow-none mt-80 lg:mt-0 p-12 container -pr-[1000px] lg:pr-16" >
+            <h1 className=" mt-1 lg:mt-4 text-[30px] font-[Ubuntu-Bold]">
               Personal info
             </h1>
             <p className="font-[Ubuntu-Regular] text-[16px] opacity-50">
