@@ -129,6 +129,11 @@ The idea for the Multi-Step Form came from front-end mentor website and i just w
 
 4. **Github** : 
    - Learnt how to push and pull on github form this project  
+
+5. **Javascript**   
+- Hard a hard time putting/implementing javascript on a project 
+- Learnt that i just need to continue developing project to develop my skill in javascript 
+- learnt a litle bit of advanced javascript and some es6javascript
    
 
 

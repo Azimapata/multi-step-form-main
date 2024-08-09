@@ -22,6 +22,7 @@ body{
 .background{
     background-image: url('./images/bg-sidebar-desktop.svg');
     background-repeat: no-repeat;
+    
 }
 
 @media screen and (max-width: 600px){

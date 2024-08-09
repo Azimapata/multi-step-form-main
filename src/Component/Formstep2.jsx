@@ -6,17 +6,23 @@ import Sidebar from "./SideBar";
 import { useState } from "react";
 
 const Formstep2 = ({ onNext, onBack }) => {
+  // State to manage the billing cycle (monthly or yearly)
   const [isYearly, setIsYearly] = useState(false);
+
+  // State to manage the selected plan
   const [selectedPlan, setSelectedPlan] = useState("");
 
+  // Toggle between yearly and monthly billing
   const handleToggle = () => {
     setIsYearly(!isYearly);
   };
 
+  // Handle plan selection
   const handlePlanSelect = (plan) => {
     setSelectedPlan(plan);
   };
 
+  // Determine the CSS classes for plan cards based on the selected plan
   const getPlanClass = (plan) =>
     `border-[1px] pt-6 pb-9 pl-5 pr-12 rounded-lg ${
       selectedPlan === plan ? "border-blue-800" : "border-gray-300"
@@ -25,10 +31,13 @@ const Formstep2 = ({ onNext, onBack }) => {
   return (
     <div>
       <div>
-        <div className="flex  bg-[#fafbff] rounded-lg shadow-2xl">
+        {/* Main container for form and sidebar */}
+        <div className="flex bg-[#fafbff] rounded-lg shadow-2xl">
+          {/* Sidebar component */}
           <div>
             <Sidebar />
           </div>
+          {/* Plan selection section */}
           <div className="ml-24 mr-28">
             <h1 className="mt-16 text-[30px] font-[Ubuntu-Bold]">
               Select your plan
@@ -37,6 +46,7 @@ const Formstep2 = ({ onNext, onBack }) => {
               You have the option of monthly or yearly billing.
             </p>
             <div className="flex mt-11">
+              {/* Arcade plan card */}
               <div
                 className={getPlanClass("arcade")}
                 onClick={() => handlePlanSelect("arcade")}
@@ -49,6 +59,7 @@ const Formstep2 = ({ onNext, onBack }) => {
                   </span>
                 </p>
               </div>
+              {/* Advanced plan card */}
               <div
                 className={`${getPlanClass("advanced")} ml-5`}
                 onClick={() => handlePlanSelect("advanced")}
@@ -61,6 +72,7 @@ const Formstep2 = ({ onNext, onBack }) => {
                   </span>
                 </p>
               </div>
+              {/* Pro plan card */}
               <div
                 className={`${getPlanClass("pro")} ml-5`}
                 onClick={() => handlePlanSelect("pro")}
@@ -74,6 +86,7 @@ const Formstep2 = ({ onNext, onBack }) => {
                 </p>
               </div>
             </div>
+            {/* Billing cycle toggle */}
             <div className="flex items-center mt-12 justify-items-center bg-[#f0f6ff] p-3 w-[430px]">
               <p className="pr-3 ml-28 font-[Ubuntu-Regular]">Monthly</p>
               <label className="relative inline-block w-8 h-4">
@@ -88,13 +101,15 @@ const Formstep2 = ({ onNext, onBack }) => {
               <p className="pl-3 text-[#090646de font-[Ubuntu-Medium]">Yearly</p>
             </div>
             <div className="flex">
+              {/* Go back button */}
               <button
                 className="mt-24 font-[Ubuntu-Regular] text-[16px] mr-64 opacity-50"
                 onClick={onBack}
               >
                 Go back
               </button>
-              <div className="flex justify-end mt-24 ">
+              {/* Next step button */}
+              <div className="flex justify-end mt-24">
                 <button
                   className="bg-[#090646de] p-3 text-white rounded-xl pl-9 pr-9"
                   onClick={onNext}
@@ -111,6 +126,7 @@ const Formstep2 = ({ onNext, onBack }) => {
   );
 };
 
+// Define prop types for validation
 Formstep2.propTypes = {
   onNext: PropTypes.func.isRequired,
   onBack: PropTypes.func.isRequired,
