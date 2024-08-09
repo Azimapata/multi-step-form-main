@@ -20,13 +20,13 @@ const Formstep3 = ({ onNext, onBack }) => {
           <div>
             <Sidebar />
           </div>
-          <div className="ml-20 mr-16">
+          <div className="ml-12 mr-16">
             <h1 className="mt-16 text-[30px] font-[Ubuntu-Bold]">Pick add-ons</h1>
             <p className="font-[Ubuntu-Regular] text-[16px] opacity-50">
               Add-ons help enhance your gaming experience.
             </p>
             <div>
-              <div className="flex items-center mt-11 hover:border-blue-800 duration-1000 border-[1px] p-3 rounded-lg">
+              <div className="flex items-center mt-11 hover:border-blue-800 duration-1000 border-[1px] p-3 rounded-lg ">
                 <input
                   type="checkbox"
                   name="onlineService"
