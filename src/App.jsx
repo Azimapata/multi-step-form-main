@@ -4,6 +4,7 @@ import FormStep2 from "./Component/Formstep2";
 import FormStep3 from "./Component/Formstep3";
 import FormStep4 from "./Component/Formstep4";
 import Submission from "./Component/Sumbission";
+import Sidebar from "./Component/SideBar"; // Import Sidebar component
 import "./index.css";
 
 function App() {
@@ -65,8 +66,13 @@ function App() {
 
   return (
     <div className="flex items-center justify-center w-full min-h-[80vh] lg:min-h-screen">
-      {/* Render the component corresponding to the current step */}
-      <div>{stepContent}</div>
+      {/* Pass the current step to the Sidebar component */}
+           {/* Render the component corresponding to the current step */}
+      <div className= "flex bg-[#fafbff] rounded-lg shadow-2xl">
+      <Sidebar currentStep={step} />
+
+        { stepContent}
+      </div>
     </div>
   );
 }

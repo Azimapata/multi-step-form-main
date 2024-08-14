@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import arcade from "../images/icon-arcade.svg";
 import advance from "../images/icon-advanced.svg";
 import pro from "../images/icon-pro.svg";
-import Sidebar from "./SideBar";
+// import Sidebar from "./SideBar";
 import { useState } from "react";
 
 const Formstep2 = ({ onNext, onBack }) => {
@@ -32,11 +32,11 @@ const Formstep2 = ({ onNext, onBack }) => {
     <div>
       <div>
         {/* Main container for form and sidebar */}
-        <div className="flex bg-[#fafbff] rounded-lg shadow-2xl">
+        <div className="flex ">
           {/* Sidebar component */}
-          <div>
+          {/* <div>
             <Sidebar />
-          </div>
+          </div> */}
           {/* Plan selection section */}
           <div className="ml-24 mr-28">
             <h1 className="mt-16 text-[30px] font-[Ubuntu-Bold]">

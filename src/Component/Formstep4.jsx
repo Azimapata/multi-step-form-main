@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Sidebar from "./SideBar";
+// import Sidebar from "./SideBar";
 
 const Formstep4 = ({ onNext, onBack, selectedAddOns }) => {
   // Calculate the total cost of selected add-ons
@@ -9,11 +9,11 @@ const Formstep4 = ({ onNext, onBack, selectedAddOns }) => {
     <div>
       <div>
         {/* Main container for form and sidebar */}
-        <div className="flex bg-[#fafbff] rounded-lg shadow-2xl">
+        <div className="flex ">
           {/* Sidebar component */}
-          <div>
+          {/* <div>
             <Sidebar />
-          </div>
+          </div> */}
           {/* Summary and confirmation section */}
           <div className="ml-20 mr-32">
             <h1 className="mt-12 text-[30px] font-[Ubuntu-Bold]">Finishing up</h1>

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Sidebar from "./SideBar";
+// import Sidebar from "./SideBar";
 
 const Formstep3 = ({ onNext, onBack, selectedAddOns, onAddOnChange }) => {
   // List of available add-ons with their id, product name, and price
@@ -18,11 +18,11 @@ const Formstep3 = ({ onNext, onBack, selectedAddOns, onAddOnChange }) => {
     <div>
       <div>
         {/* Main container for form and sidebar */}
-        <div className="flex bg-[#fafbff] rounded-lg shadow-2xl">
+        <div className="flex ">
           {/* Sidebar component */}
-          <div>
+          {/* <div>
             <Sidebar />
-          </div>
+          </div> */}
           {/* Add-ons selection section */}
           <div className="ml-12 mr-16">
             <h1 className="mt-16 text-[30px] font-[Ubuntu-Bold]">Pick add-ons</h1>
@@ -64,7 +64,7 @@ const Formstep3 = ({ onNext, onBack, selectedAddOns, onAddOnChange }) => {
                   className="bg-[#090646de] p-3 text-white rounded-xl pl-9 pr-9"
                   onClick={onNext}
                   // Disable button if no add-ons are selected
-                  disabled={selectedAddOns.length === 0}
+                  // disabled={selectedAddOns.length === 0}
                 >
                   Next step
                 </button>

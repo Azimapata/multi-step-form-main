@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import thankyou from '../images/icon-thank-you.svg';
-import Sidebar from './SideBar';
+
 
 const Sumbission = () => {
   return (
@@ -8,11 +8,9 @@ const Sumbission = () => {
       {/* Main container for the form and sidebar */}
       <div>
         {/* Layout with sidebar and main content */}
-        <div className="flex bg-[#fafbff] rounded-lg shadow-2xl">
+        <div className="flex ">
           {/* Sidebar component */}
-          <div>
-            <Sidebar />
-          </div>
+         
           {/* Main content section */}
           <div className="mx-auto ml-20 mr-32">
             {/* Centered thank you message */}

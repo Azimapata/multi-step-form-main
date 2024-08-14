@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Sidebar from "./SideBar";
+
 import { useState } from "react";
 
 const Formstep1 = ({ onNext }) => {
@@ -71,13 +71,13 @@ const Formstep1 = ({ onNext }) => {
     <div>
       <div>
         {/* Container for form and sidebar */}
-        <div className="flex flex-col lg:flex-row bg-[#fafbff] rounded-lg shadow-2xl">
+        <div className="flex flex-col lg:flex-row ">
           {/* Sidebar component */}
-          <div>
+          {/* <div>
             <Sidebar />
-          </div>
+          </div> */}
           {/* Form section */}
-          <div className="ml-1 absolute lg:relative inset-0 lg:ml-11 bg-[#fafbff] lg:bg-transparent rounded-lg lg:rounded-none shadow-2xl lg:shadow-none mt-80 lg:mt-0 p-12 container pr-16">
+          <div className="container absolute p-12 pr-16 ml-1 rounded-none lg:relative lg:ml-11 lg:bg-transparent mt-80 lg:mt-0">
             <h1 className="mt-1 lg:mt-4 text-[30px] font-[Ubuntu-Bold]">
               Personal info
             </h1>
@@ -142,6 +142,7 @@ const Formstep1 = ({ onNext }) => {
                 <button
                   type="submit"
                   className="bg-[#090646de] p-3 text-white rounded-xl pl-9 pr-9"
+                  
                 >
                   Next step
                 </button>
